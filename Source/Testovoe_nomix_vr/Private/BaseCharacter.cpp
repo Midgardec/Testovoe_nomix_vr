@@ -132,12 +132,7 @@ void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FActorSpawnParameters SpawnParametrs = FActorSpawnParameters();
-
-	if (GetWorld()) {
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Magenta, FString::Printf(TEXT("ADDED ticket0 to inventory for test")));
-		TicketInventory = GetWorld()->SpawnActor<ATicketInventory>(ATicketInventory::StaticClass(), SpawnParametrs);
-	}
+	
 
 }
 
