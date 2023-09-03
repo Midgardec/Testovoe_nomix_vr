@@ -43,7 +43,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	virtual void Activate(class ABaseTicket* Ticket) override;
-	
+	UFUNCTION(BlueprintCallable)
 	virtual int32 GetTurnstileId();
 	UFUNCTION(BlueprintCallable)
 	virtual void GetTurnstileState(bool& OutIsOpen, bool& OutIsLocked) ;
